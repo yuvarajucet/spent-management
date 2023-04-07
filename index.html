@@ -8,81 +8,119 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="assets/style/index.css">
         <script src="assets/script/index.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     </head>
-    <body>
-        <div class="header">
-            <h1>
-                Income-spent Management
-            </h1>
-        </div>
-        <div class="initial-amt">
-            <div class="initial-amt-label">
-                Initial Amount
+    <body class="container">
+        <h1 class="text-center"><u>Income Spent Management</u></h1>
+        <br><br>
+        <div class="container">
+            <div class="form-group text-center">
+                <label for="spentAmount" class="h4">Initial Amount</label>
+                <form class="justify-content-center">
+                    <div class="input-group col-sm-5 mx-auto">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">💲</span>
+                        </div>
+                        <input type="number" class="form-control" id="spentAmount" placeholder="Enter amount">
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
             </div>
-            <div class="initial-amt-input">
-                <input type="text" placeholder="Amount">
-            </div>
-            <div class="initial-amt-btn">
-                <button>
-                    Submit
-                </button>
-            </div>
-        </div>
-        <hr>
-        <div class="spent-amt">
-            <div class="spent-reason">
-                <input type="text" placeholder="Reason">
-            </div>
-            <div class="spent-amt">
-                <input type="text" placeholder="Amount">
-            </div>
-            <div class="spent-amt-btn">
-                <button>
-                    Add
-                </button>
-            </div>
-        </div>
-        <hr>
-        <div class="initial-amt-table">
-            <table border="1">
-                <tr>
-                    <th>Initial Amount</th>
-                    <th>Edit</th>
-                </tr>
-                <tr>
-                    <td>&#8377; 1000</td>
-                    <td>Edit / Delete</td>
-                </tr>
-            </table>
-        </div>
-        <hr>
-        <div class="spent-amt-table">
-            <table border="1">
-                <tr>
-                    <th>S.no</th>
-                    <th>Spent Reason</th>
-                    <th>Spent Amount</th>
-                    <th>Edit</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Food</td>
-                    <td>250</td>
-                    <td>Edit / Delte</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Shopping</td>
-                    <td>500</td>
-                    <td>Edit / Delete</td>
-                </tr>
-                <tr>
-                    <td colspan="2">Total</td>
-                    <td colspan="2">750</td>
-                </tr>
-            </table>
-        </div>
+        </div> 
+        
 
+        <hr style="width:80%">
+
+        <div class="container">
+            <div class="form-group text-center">
+                <label for="spentAmount" class="h4">Spent Amount</label>
+                <form class="justify-content-center">
+                    <div class="input-group col-sm-5 mx-auto">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">🛒</span>
+                        </div>
+                        <input type="text" class="form-control" id="spentAmount" placeholder="Reason">
+                    </div>
+                    <br>
+                    <div class="input-group col-sm-5 mx-auto">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">💲</span>
+                        </div>
+                        <input type="number" class="form-control" id="spentAmount" placeholder="Enter amount">
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-primary">Add</button>
+                </form>
+            </div>
+        </div>      
+            
+
+            <hr style="width:80%">
+            
+            <br><br>
+            <div class="initial-amt-table">
+                <h4 class="text-center"><u>Initial Amount</u></h4>
+                <table class="table table-striped">
+                    <tr>
+                        <th>S.No</th>
+                        <th>Initial Amount</th>
+                        <th>Edit</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>💲 1000</td>
+                        <td>Delete</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>💲150</td>
+                        <td>Delete</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>💲1150</td>
+                        <td>Delete</td>
+                    </tr>
+                </table>
+            </div>
+
+
+            <hr>
+            
+            
+            <div class="spent-amt-table">
+                <h4 class="text-center"><u>Spent Amount List</u></h4>
+                <table class="table table-striped">
+                    <thead class="thead-dark">
+                    <tr>
+                        <th>S.no</th>
+                        <th>Spent Reason</th>
+                        <th>Spent Amount</th>
+                        <th>Delete</th>
+                    </tr>
+                    </thead>
+                    <tr>
+                        <td>1</td>
+                        <td>Food</td>
+                        <td>250</td>
+                        <td>Delete</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Shopping</td>
+                        <td>500</td>
+                        <td>Delete</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Total</td>
+                        <td colspan="2">750</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
     </body>
 </html>
