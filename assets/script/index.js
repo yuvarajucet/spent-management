@@ -1,3 +1,5 @@
+import { MakeServerRequest } from './serverRequestHandler.js'
+
 var isReasonValid = false;
 var isSpentAmtValid = false;
 
@@ -16,6 +18,11 @@ $("#spentAmount").keyup(function(){
     ValidateUserInput($(this), "spent");
 });
 
+// trigger initialAmt button click
+$("#initialAmtBtn").click(function(event){
+    event.preventDefault();
+    MakeServerRequest($("#initialAmt").val());
+});
 
 function ValidateUserInput(userInput, valueType){
     const Amtpattern = /^[0-9.]+$/;
